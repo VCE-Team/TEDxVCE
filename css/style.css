@@ -16841,3 +16841,27 @@ body {
     background-color: rgba(228, 9, 19, 0);
   }
 }
+
+@media (max-width: 575.98px) {
+    .responsive-font {
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .responsive-font {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive-font {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-font {
+        font-size: 4vw;
+    }
+}
