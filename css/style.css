@@ -16865,3 +16865,13 @@ body {
         font-size: 4vw;
     }
 }
+    #blog_speaker {
+        display: flex;
+        gap: 20px;
+    }
+
+@media (min-width: 200px) and (max-width: 767.98px) {
+    #blog_speaker {
+        flex-direction: column;
+    }
+}
