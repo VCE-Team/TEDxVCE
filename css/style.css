@@ -16860,12 +16860,16 @@ body {
     .responsive-font {
         font-size: 3vw;
     }
+    .d-image-wrap {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
     .responsive-font {
         font-size: 4vw;
     }
+
 }
     #blog_speaker {
         display: flex;
@@ -16878,5 +16882,8 @@ body {
     }
     .wm{
         font-size: 100px;
+    }
+    .d-image-wrap {
+        display: none;
     }
 }
