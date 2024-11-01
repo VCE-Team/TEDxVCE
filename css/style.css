@@ -9878,6 +9878,23 @@ i.bg-color-secondary {
 
 /* ================================================== */
 
+.container #gallery ::-webkit-scrollbar{
+    width: 10px;
+}
+.container #gallery::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container #gallery::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.container #gallery::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+
+
 body::-webkit-scrollbar {
     width: 10px;
 }
