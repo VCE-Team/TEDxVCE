@@ -17,4 +17,4 @@ jobs:
       - run: npm run build
       - run: git config --local user.email "github-actions[bot]@users.noreply.github.com"
       - run: git config --local user.name "github-actions[bot]"
-      - run: npx gh-pages -d dist --repo=https://github.com/${{ github.repository }}
+      - run: npx gh-pages -d dist --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
