@@ -46,7 +46,7 @@ const Navbar = () => {
           >
             <Link to="/">
               <img 
-                src="/lovable-uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png" 
+                src="/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png" 
                 alt="TEDxVCE Logo" 
                 className="h-10 md:h-12"
               />

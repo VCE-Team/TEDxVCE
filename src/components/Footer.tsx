@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <img 
-              src="/lovable-uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png" 
+              src="/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png" 
               alt="TEDxVCE Logo" 
               className="h-12 mb-4"
             />

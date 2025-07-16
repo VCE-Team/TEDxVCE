@@ -79,7 +79,7 @@ const Hero = () => {
               transition={{ duration: 1 }}
             >
               <img 
-                src="/lovable-uploads/Frame 8.png" 
+                src="/uploads/Frame 8.png" 
                 alt="TEDxVCE Event Frame" 
                 className="w-full h-auto"
               />
