@@ -6,6 +6,87 @@ import { motion } from "framer-motion";
 import { InfoIcon, ArrowRight, Globe, Calendar, Users, Lightbulb, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { useForm, ValidationError } from '@formspree/react';
+
+const ContactForm = () => {
+  const [state, handleSubmit] = useForm("mqalkwga");
+  
+  if (state.succeeded) {
+    return (
+      <div className="text-center py-4">
+        <div className="text-green-400 text-lg font-medium mb-2">✓ Message Sent!</div>
+        <p className="text-white/70 text-sm">Thanks for reaching out! We'll get back to you soon.</p>
+      </div>
+    );
+  }
+  
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="space-y-4">
+        <div>
+          <input 
+            id="name"
+            type="text" 
+            name="name"
+            placeholder="Your Name" 
+            className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50"
+          />
+          <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+            className="text-red-400 text-sm mt-1"
+          />
+        </div>
+        
+        <div>
+          <input 
+            id="email"
+            type="email" 
+            name="email"
+            placeholder="Your Email" 
+            className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50"
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+            className="text-red-400 text-sm mt-1"
+          />
+        </div>
+        
+        <div>
+          <textarea 
+            id="message"
+            name="message"
+            placeholder="Your Message" 
+            rows={4} 
+            className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50 resize-none"
+          ></textarea>
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+            className="text-red-400 text-sm mt-1"
+          />
+        </div>
+        
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Button 
+            type="submit" 
+            disabled={state.submitting}
+            className="w-full bg-tedxred hover:bg-tedxred/90 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {state.submitting ? 'Sending...' : 'Send Message'}
+          </Button>
+        </motion.div>
+      </div>
+    </form>
+  );
+};
 
 const About = () => {
   const [hoveredImg, setHoveredImg] = useState<number | null>(null);
@@ -501,42 +582,7 @@ const About = () => {
                     <h4 className="font-bold text-lg">Get In Touch</h4>
                   </div>
                   
-                  <form>
-                    <div className="space-y-4">
-                      <div>
-                        <input 
-                          type="text" 
-                          placeholder="Your Name" 
-                          className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50"
-                        />
-                      </div>
-                      
-                      <div>
-                        <input 
-                          type="email" 
-                          placeholder="Your Email" 
-                          className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50"
-                        />
-                      </div>
-                      
-                      <div>
-                        <textarea 
-                          placeholder="Your Message" 
-                          rows={4} 
-                          className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2 text-white placeholder:text-white/50 focus:outline-none focus:border-tedxred/50 resize-none"
-                        ></textarea>
-                      </div>
-                      
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <Button className="w-full bg-tedxred hover:bg-tedxred/90 text-white">
-                          Send Message
-                        </Button>
-                      </motion.div>
-                    </div>
-                  </form>
+                  <ContactForm />
                 </div>
               </div>
             </motion.div>

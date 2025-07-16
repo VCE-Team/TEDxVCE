@@ -11,8 +11,21 @@ import Venue from "./pages/Venue";
 import Gallery from "./pages/Gallery";
 import PastSeasons from "./pages/PastSeasons";
 import NotFound from "./pages/NotFound";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const queryClient = new QueryClient();
+
+// ScrollToTop component to scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -20,6 +33,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
