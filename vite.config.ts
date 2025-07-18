@@ -13,8 +13,18 @@ export default defineConfig({
   build: {
     target: 'es2015',
     minify: 'terser',
+    rollupOptions: {
+      external: [],
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          framer: ['framer-motion']
+        }
+      }
+    }
   },
   optimizeDeps: {
+    include: ['framer-motion'],
     esbuildOptions: {
       define: {
         global: 'globalThis',
