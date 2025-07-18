@@ -17,7 +17,7 @@ const Team = () => {
       name: "Aniketh Kanna",
       role: "Organizer",
       department: "core",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      image: "/uploads/aniketh.png",
       linkedin: "https://www.linkedin.com/in/aniketh-kanna-003677299/",
       instagram: "https://www.instagram.com/aniketh.06/",
       email: "anikethdegala@gmail.com",
@@ -69,14 +69,14 @@ const Team = () => {
     },
     {
       id: 6,
-      name: "TBD",
+      name: "Lohith Kumar Teerthala",
       role: "Curator",
       department: "core",
       image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/lohith-kumar-teerthala-9b04aa197/",
+      instagram: "https://www.instagram.com/_nani_lohith_19_/",
       email: "curator@vardhaman.org",
-      bio: "Position to be filled. The Curator will oversee speaker selection and content development, ensuring each talk delivers powerful ideas worth spreading."
+      bio: "Lohith Kumar Teerthala serves as the Curator for TEDxVCE, overseeing speaker selection and content development. He ensures each talk delivers powerful ideas worth spreading and maintains the high standards of TEDx events."
     },
     {
       id: 7,
@@ -182,14 +182,14 @@ const Team = () => {
     },
     {
       id: 17,
-      name: "TBD",
+      name: "Aron D'Souza",
       role: "Executive Producer",
       department: "core",
       image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/arondsouza369/",
+      instagram: "https://www.instagram.com/arondsouza3/",
       email: "executive.producer@vardhaman.org",
-      bio: "Position to be filled. The Executive Producer will oversee the overall production and execution of TEDxVCE, ensuring all elements come together seamlessly."
+      bio: "Aron D'Souza serves as the Executive Producer for TEDxVCE, overseeing the overall production and execution of TEDxVCE, ensuring all elements come together seamlessly."
     }
   ];
 

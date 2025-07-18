@@ -16,13 +16,13 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-radial from-red-500/30 via-transparent to-transparent" />
       </motion.div>
 
-      {/* Background dot texture */}
+      {/* Background dot texture - reduced for mobile */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-30">
-          {[...Array(300)].map((_, i) => (
+          {[...Array(150)].map((_, i) => (
             <div
               key={`dot-${i}`}
-              className="absolute w-1 h-1 bg-red-200 rounded-full"
+              className="absolute w-0.5 h-0.5 md:w-1 md:h-1 bg-red-200 rounded-full"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -32,12 +32,12 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced immersive rippling effect from center */}
+      {/* Enhanced immersive rippling effect from center - responsive */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
-        {[...Array(8)].map((_, i) => (
+        {[...Array(6)].map((_, i) => (
           <motion.div
             key={`ripple-${i}`}
-            className="absolute w-96 h-96 border border-white/30 rounded-full"
+            className="absolute w-48 h-48 md:w-96 md:h-96 border border-white/30 rounded-full"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ 
               scale: [0, 1.2, 2.2, 3.2, 4.2],
@@ -52,11 +52,11 @@ const Hero = () => {
           />
         ))}
         
-        {/* Additional ripple layers for more immersion */}
-        {[...Array(6)].map((_, i) => (
+        {/* Additional ripple layers for more immersion - reduced for mobile */}
+        {[...Array(4)].map((_, i) => (
           <motion.div
             key={`ripple-inner-${i}`}
-            className="absolute w-64 h-64 border border-white/20 rounded-full"
+            className="absolute w-32 h-32 md:w-64 md:h-64 border border-white/20 rounded-full"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ 
               scale: [0, 1.5, 2.5, 3.5],
@@ -72,17 +72,17 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Central geometric star pattern - radiating from center like poster */}
+      {/* Central geometric star pattern - responsive */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <motion.div 
-          className="relative w-[500px] h-[500px]"
+          className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
           initial={{ scale: 0, rotate: 0 }}
           animate={{ scale: 1, rotate: 360 }}
           transition={{ duration: 4, ease: "easeOut" }}
         >
-          {/* Central circle - changes from white to red then fades to transparent */}
+          {/* Central circle - responsive */}
           <motion.div 
-            className="absolute inset-0 w-96 h-96 rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 shadow-2xl"
+            className="absolute inset-0 w-48 h-48 md:w-96 md:h-96 rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 shadow-2xl"
             initial={{ backgroundColor: "#ffffff" }}
             animate={{ 
               backgroundColor: ["#ffffff", "#dc2626", "#dc2626", "#dc2626"],
@@ -97,9 +97,9 @@ const Hero = () => {
             }}
           />
           
-          {/* Light transparent white circle - appears after red circle fades */}
+          {/* Light transparent white circle - responsive */}
           <motion.div 
-            className="absolute inset-0 w-96 h-96 bg-white/50 rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
+            className="absolute inset-0 w-48 h-48 md:w-96 md:h-96 bg-white/50 rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 0.6, 0.5] }}
             transition={{ 
@@ -109,7 +109,7 @@ const Hero = () => {
             }}
           />
           
-          {/* Main radiating star pattern - exactly like poster */}
+          {/* Main radiating star pattern - responsive */}
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 500 500">
             {/* Primary radiating lines from center */}
             <motion.path
@@ -168,14 +168,14 @@ const Hero = () => {
             />
           </svg>
           
-          {/* Rotating geometric elements around the pattern */}
-          {[...Array(12)].map((_, i) => (
+          {/* Rotating geometric elements - reduced for mobile */}
+          {[...Array(8)].map((_, i) => (
             <motion.div
               key={`geo-${i}`}
-              className="absolute w-6 h-6 border-2 border-white/40"
+              className="absolute w-4 h-4 md:w-6 md:h-6 border-2 border-white/40"
               style={{
-                left: `${50 + 40 * Math.cos((i * Math.PI * 2) / 12)}%`,
-                top: `${50 + 40 * Math.sin((i * Math.PI * 2) / 12)}%`,
+                left: `${50 + 40 * Math.cos((i * Math.PI * 2) / 8)}%`,
+                top: `${50 + 40 * Math.sin((i * Math.PI * 2) / 8)}%`,
                 transform: 'translate(-50%, -50%)',
               }}
               animate={{ 
@@ -193,10 +193,10 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Radiating glow effects from center */}
+      {/* Radiating glow effects from center - responsive */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div 
-          className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-gradient-radial from-red-400/20 via-red-500/10 to-transparent transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
+          className="absolute top-1/2 left-1/2 w-48 h-48 md:w-96 md:h-96 rounded-full bg-gradient-radial from-red-400/20 via-red-500/10 to-transparent transform -translate-x-1/2 -translate-y-1/2 blur-3xl"
           animate={{ 
             scale: [1, 1.5, 1],
             opacity: [0.3, 0.6, 0.3]
@@ -205,7 +205,7 @@ const Hero = () => {
         />
         
         <motion.div 
-          className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-gradient-radial from-red-300/30 via-red-400/15 to-transparent transform -translate-x-1/2 -translate-y-1/2 blur-2xl"
+          className="absolute top-1/2 left-1/2 w-32 h-32 md:w-64 md:h-64 rounded-full bg-gradient-radial from-red-300/30 via-red-400/15 to-transparent transform -translate-x-1/2 -translate-y-1/2 blur-2xl"
           animate={{ 
             scale: [1, 1.3, 1],
             opacity: [0.2, 0.5, 0.2]
@@ -213,8 +213,8 @@ const Hero = () => {
           transition={{ duration: 6, repeat: Infinity, repeatType: "reverse", delay: 1 }}
         />
         
-        {/* Animated line patterns radiating from center */}
-        {[...Array(8)].map((_, i) => (
+        {/* Animated line patterns radiating from center - reduced for mobile */}
+        {[...Array(6)].map((_, i) => (
           <motion.div
             key={`line-${i}`}
             className="absolute h-[1px] bg-white/15 origin-left"
@@ -232,14 +232,14 @@ const Hero = () => {
           />
         ))}
         
-        {/* Floating particles radiating from center */}
-        {[...Array(50)].map((_, i) => (
+        {/* Floating particles radiating from center - reduced for mobile */}
+        {[...Array(30)].map((_, i) => (
           <motion.div
             key={`particle-${i}`}
             className={`absolute rounded-full ${i % 5 === 0 ? 'bg-red-300/40' : i % 5 === 1 ? 'bg-white/30' : i % 5 === 2 ? 'bg-red-200/35' : i % 5 === 3 ? 'bg-red-400/25' : 'bg-white/20'}`}
             style={{ 
-              width: `${2 + Math.random() * 4}px`, 
-              height: `${2 + Math.random() * 4}px`,
+              width: `${1 + Math.random() * 3}px`, 
+              height: `${1 + Math.random() * 3}px`,
               left: '50%',
               top: '50%',
             }}
@@ -249,8 +249,8 @@ const Hero = () => {
               opacity: 0 
             }}
             animate={{ 
-              x: `${(Math.random() - 0.5) * 800}px`,
-              y: `${(Math.random() - 0.5) * 800}px`,
+              x: `${(Math.random() - 0.5) * 600}px`,
+              y: `${(Math.random() - 0.5) * 600}px`,
               opacity: [0, 0.8, 0]
             }}
             transition={{ 
