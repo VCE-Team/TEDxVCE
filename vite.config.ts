@@ -14,4 +14,17 @@ export default defineConfig({
     target: 'es2015',
     minify: 'terser',
   },
+  optimizeDeps: {
+    esbuildOptions: {
+      define: {
+        global: 'globalThis',
+      },
+    },
+  },
+  define: {
+    global: 'globalThis',
+  },
+  server: {
+    host: true,
+  },
 });

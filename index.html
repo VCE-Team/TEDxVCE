@@ -16,6 +16,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@tedxvce" />
     <meta name="twitter:image" content="https://tedxvce.vardhaman.org/og-image.png" />
+    <script>
+      // Crypto polyfill for Node.js compatibility
+      if (typeof global === 'undefined') {
+        window.global = window;
+      }
+      if (typeof crypto === 'undefined') {
+        window.crypto = {
+          getRandomValues: function(array) {
+            for (let i = 0; i < array.length; i++) {
+              array[i] = Math.floor(Math.random() * 256);
+            }
+            return array;
+          }
+        };
+      }
+    </script>
   </head>
 
   <body>
