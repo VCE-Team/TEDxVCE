@@ -25,6 +25,7 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['framer-motion'],
+    exclude: ['motion-utils'],
     esbuildOptions: {
       define: {
         global: 'globalThis',
