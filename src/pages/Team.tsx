@@ -133,12 +133,12 @@ const Team = () => {
     {
       id: 12,
       name: "Dr. Siddartha Reddy",
-      role: "Associate Dean, Examinations",
+      role: "Assistant COE, Examinations",
       department: "faculty",
       image: "/uploads/dr-siddartha-reddy.png",
       linkedin: "#",
       email: "examinations@vardhaman.org",
-      bio: "Dr. Siddartha Reddy serves as the Associate Dean of Examinations, overseeing academic assessment and evaluation processes."
+      bio: "Dr. Siddartha Reddy serves as the Assistant COE of Examinations, overseeing academic assessment and evaluation processes."
     },
     {
       id: 13,
