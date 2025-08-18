@@ -6,24 +6,17 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Priya Sharma",
-    role: "TEDxVCE 2024 Attendee",
-    quote: "The TEDxVCE event was a mind-opening experience. The speakers brought fresh perspectives that challenged my thinking and inspired me to take action in my community.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+    name: "Nandini Karnakoti",
+    role: "Associate Manager – Marketing, Communication & Editorial",
+    quote: "Serving as an Associate Manager at TEDxVCE was a rewarding experience. It was a pleasure collaborating with a passionate team and contributing to a platform that inspires meaningful change.",
+    image: "/uploads/nandini.png"
   },
   {
     id: 2,
-    name: "Rahul Mehta",
-    role: "Innovation Speaker",
-    quote: "Speaking at TEDxVCE was one of the highlights of my career. The audience was engaged and passionate, and the organization was flawless from start to finish.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-  },
-  {
-    id: 3,
-    name: "Ananya Desai",
-    role: "Student Volunteer",
-    quote: "Volunteering for TEDxVCE changed my perspective on event management and gave me the chance to connect with incredible thought leaders from diverse fields.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+    name: "Ayush Roy",
+    role: "Co-Founder, Culltique",
+    quote: "As both a sponsor and attendee of TEDxVCE, I was impressed by the exceptional organization and the quality of ideas shared. The event perfectly captured the spirit of innovation and collaboration that Culltique stands for.",
+    image: "/uploads/ayush.png"
   }
 ];
 
