@@ -137,7 +137,13 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <Button className="bg-tedxred hover:bg-tedxred/90 text-white w-full transition-transform hover:scale-105">
+        <Button 
+          className="bg-tedxred hover:bg-tedxred/90 text-white w-full transition-transform hover:scale-105"
+          onClick={() => {
+            window.open('https://www.meraevents.com/event/tedxvce2025', '_blank');
+            onClose();
+          }}
+        >
           Buy Ticket
         </Button>
       </motion.div>

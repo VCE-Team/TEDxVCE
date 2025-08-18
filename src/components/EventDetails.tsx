@@ -1,5 +1,6 @@
 
 import { Calendar, MapPin, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const EventDetails = () => {
   return (
@@ -14,7 +15,7 @@ const EventDetails = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="bg-black/50 backdrop-blur-sm border border-white/10 p-8 rounded-xl flex flex-col items-center text-center hover:border-tedxred/50 transition-colors">
             <Calendar className="w-12 h-12 text-tedxred mb-4" />
             <h3 className="text-2xl font-bold mb-2">Date</h3>
@@ -42,6 +43,15 @@ const EventDetails = () => {
             <h3 className="text-2xl font-bold mb-2">Time</h3>
             <p className="text-white/80">9:00 AM - 5:00 PM</p>
           </div>
+        </div>
+
+        <div className="text-center">
+          <Button 
+            className="bg-tedxred hover:bg-tedxred/90 text-white text-lg px-8 py-6 transition-all hover:scale-105"
+            onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+          >
+            Get Tickets
+          </Button>
         </div>
       </div>
     </section>

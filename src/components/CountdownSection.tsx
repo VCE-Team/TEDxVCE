@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const CountdownSection = () => {
   // Set the date we're counting down to (September 20, 2025)
@@ -120,6 +121,21 @@ const CountdownSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          className="text-center mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <Button 
+            className="bg-tedxred hover:bg-tedxred/90 text-white text-lg px-8 py-6 transition-all hover:scale-105"
+            onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+          >
+            Get Tickets
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

@@ -312,7 +312,10 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 5.5 }}
         >
-          <Button className="bg-tedxred hover:bg-tedxred/90 text-white text-lg px-8 py-6 transition-all hover:scale-105 group relative overflow-hidden">
+          <Button 
+            className="bg-tedxred hover:bg-tedxred/90 text-white text-lg px-8 py-6 transition-all hover:scale-105 group relative overflow-hidden"
+            onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+          >
             <span className="relative z-10">Get Tickets</span>
             <motion.span 
               className="absolute inset-0 bg-gradient-to-r from-tedxred via-red-500 to-tedxred"

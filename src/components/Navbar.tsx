@@ -86,7 +86,10 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            <Button className="bg-tedxred hover:bg-tedxred/90 text-white transition-transform hover:scale-105">
+            <Button 
+              className="bg-tedxred hover:bg-tedxred/90 text-white transition-transform hover:scale-105"
+              onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+            >
               Buy Ticket
             </Button>
           </motion.div>
