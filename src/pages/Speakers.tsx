@@ -12,6 +12,13 @@ const Speakers = () => {
       title: "Founder, Fast Tracks Car Care",
       image: "/uploads/rakesh.png",
       bio: "Rakesh Kurapati is the Founder of Fast Tracks Car Care, a venture dedicated to delivering innovative and reliable automotive solutions. With his entrepreneurial vision, he has built a brand that stands for quality, trust, and customer-focused service in the automobile industry."
+    },
+    {
+      id: 2,
+      name: "Ashok Kapatkar",
+      title: "Health Educator",
+      image: "/uploads/ashok.png",
+      bio: "A globally certified health professional, Ashok Kapatkar brings expertise in nutrition, fitness, and wellness with a strong track record of empowering individuals and organizations toward healthier lifestyles. With a passion for driving growth and impact, he continues to inspire others to embrace holistic well-being."
     }
   ];
 

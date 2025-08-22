@@ -17,7 +17,7 @@ const Team = () => {
       name: "Aniketh Kanna",
       role: "Organizer",
       department: "core",
-      image: "/uploads/aniketh.png",
+      image: "/uploads/ani.png",
       linkedin: "https://www.linkedin.com/in/aniketh-kanna-003677299/",
       instagram: "https://www.instagram.com/aniketh.06/",
       email: "anikethdegala@gmail.com",
@@ -125,7 +125,7 @@ const Team = () => {
       name: "Dr. Muni Shekar Velpuru",
       role: "Dean, CDC",
       department: "faculty",
-      image: "/uploads/dr-muni-shekar-velpuru.png",
+      image: "/uploads/muni.png",
       linkedin: "#",
       email: "cdc@vardhaman.org",
       bio: "Dr. Muni Shekar Velpuru serves as the Dean of Career Development Cell, guiding students in their professional development."
