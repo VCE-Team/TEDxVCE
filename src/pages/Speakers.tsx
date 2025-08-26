@@ -19,6 +19,13 @@ const Speakers = () => {
       title: "Health Educator",
       image: "/uploads/ashok.png",
       bio: "A globally certified health professional, Ashok Kapatkar brings expertise in nutrition, fitness, and wellness with a strong track record of empowering individuals and organizations toward healthier lifestyles. With a passion for driving growth and impact, he continues to inspire others to embrace holistic well-being."
+    },
+    {
+      id: 3,
+      name: "Harika Narayan",
+      title: "Playback Singer",
+      image: "/uploads/harika.png",
+      bio: "Harika Narayan is a renowned playback singer in the Indian film industry, known for her soulful voice and versatile singing style. Born in Razole, Andhra Pradesh, she has made a mark with her melodious contributions to cinema, continuing to inspire audiences with her passion for music."
     }
   ];
 
