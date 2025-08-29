@@ -26,6 +26,13 @@ const Speakers = () => {
       title: "Playback Singer",
       image: "/uploads/harika.png",
       bio: "Harika Narayan is a renowned playback singer in the Indian film industry, known for her soulful voice and versatile singing style. Born in Razole, Andhra Pradesh, she has made a mark with her melodious contributions to cinema, continuing to inspire audiences with her passion for music."
+    },
+    {
+      id: 4,
+      name: "Bhagwat Das Brahmachari",
+      title: "World's Youngest TEDx Speaker",
+      image: "/uploads/das.png",
+      bio: "At just 5 years and 6 months old, Bhagwat Das Brahmachari, fondly known as Bhakt Bhagwat, created history as the world's youngest TEDx speaker. With his inspiring presence and unique perspective, he embodies wisdom beyond his years, leaving audiences moved by his clarity and devotion."
     }
   ];
 
