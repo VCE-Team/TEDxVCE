@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import MobileMenu from "./MobileMenu";
+import RegistrationModal from "./RegistrationModal";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [registrationModalOpen, setRegistrationModalOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -88,7 +90,7 @@ const Navbar = () => {
           >
             <Button 
               className="bg-tedxred hover:bg-tedxred/90 text-white transition-transform hover:scale-105"
-              onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+              onClick={() => setRegistrationModalOpen(true)}
             >
               Buy Ticket
             </Button>
@@ -114,6 +116,12 @@ const Navbar = () => {
       <MobileMenu 
         isOpen={mobileMenuOpen} 
         onClose={() => setMobileMenuOpen(false)} 
+        onOpenRegistration={() => setRegistrationModalOpen(true)}
+      />
+
+      <RegistrationModal 
+        isOpen={registrationModalOpen}
+        onClose={() => setRegistrationModalOpen(false)}
       />
     </>
   );

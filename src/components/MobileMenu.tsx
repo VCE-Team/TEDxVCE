@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import AnimatedLogo from "./AnimatedLogo";
+import RegistrationModal from "./RegistrationModal";
 import { motion } from "framer-motion";
 
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
+  onOpenRegistration: () => void;
 }
 
-const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
+const MobileMenu = ({ isOpen, onClose, onOpenRegistration }: MobileMenuProps) => {
   if (!isOpen) return null;
 
   const menuVariants = {
@@ -140,7 +142,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         <Button 
           className="bg-tedxred hover:bg-tedxred/90 text-white w-full transition-transform hover:scale-105"
           onClick={() => {
-            window.open('https://www.meraevents.com/event/tedxvce2025', '_blank');
+            onOpenRegistration();
             onClose();
           }}
         >
