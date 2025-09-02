@@ -221,3 +221,5 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
 };
 
 export default RegistrationModal;
+
+
