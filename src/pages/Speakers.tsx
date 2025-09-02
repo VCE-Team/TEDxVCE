@@ -33,6 +33,13 @@ const Speakers = () => {
       title: "World's Youngest TEDx Speaker",
       image: "/uploads/das.png",
       bio: "At just 5 years and 6 months old, Bhagwat Das Brahmachari, fondly known as Bhakt Bhagwat, created history as the world's youngest TEDx speaker. With his inspiring presence and unique perspective, he embodies wisdom beyond his years, leaving audiences moved by his clarity and devotion."
+    },
+    {
+      id: 5,
+      name: "Niharika Sood",
+      title: "Miss Universe Telangana",
+      image: "/uploads/niharika.png",
+      bio: "Crowned Miss Universe Telangana 2024, Niharika is a model, content creator, and entrepreneur who transitioned from a career in software engineering to becoming a full-time face of fashion, beauty, and lifestyle. She has collaborated with leading global brands and has been featured in renowned international magazines including iMirage, VIGOUR, TheVanillaFeature, Uniting World Through Fashion, and WKND. Beyond her achievements in modeling, she is passionate about inspiring women through her journey—sharing unfiltered insights on independence, wellness, and breaking barriers in creative industries. With her unique blend of tech expertise and fashion influence, Niharika embodies the voice of a modern, multi-faceted woman who dares to dream big and turn those dreams into reality."
     }
   ];
 
