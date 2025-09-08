@@ -40,6 +40,20 @@ const Speakers = () => {
       title: "Miss Universe Telangana",
       image: "/uploads/niharika.png",
       bio: "Crowned Miss Universe Telangana 2024, Niharika is a model, content creator, and entrepreneur who transitioned from a career in software engineering to becoming a full-time face of fashion, beauty, and lifestyle. She has collaborated with leading global brands and has been featured in renowned international magazines including iMirage, VIGOUR, TheVanillaFeature, Uniting World Through Fashion, and WKND. Beyond her achievements in modeling, she is passionate about inspiring women through her journey—sharing unfiltered insights on independence, wellness, and breaking barriers in creative industries. With her unique blend of tech expertise and fashion influence, Niharika embodies the voice of a modern, multi-faceted woman who dares to dream big and turn those dreams into reality."
+    },
+    {
+      id: 6,
+      name: "Major SPS Oberoi",
+      title: "Ex-Army, Academic Director at Ekam IAS Academy",
+      image: "/uploads/major.png",
+      bio: "Major SPS Oberoi is a retired officer of the Indian Army with over 11 years of distinguished service. Following his tenure in the armed forces, he transitioned to the field of civil services education, where he has been actively mentoring UPSC aspirants. He is presently the Academic Director at Ekam IAS Academy, specializing in Ethics, Internal Security, and International Relations. In this capacity, he also mentors the Civil Services Foundation Batch, guiding students with a blend of academic rigor, practical insights, and the values of discipline and integrity instilled during his military career."
+    },
+    {
+      id: 7,
+      name: "Dr. Manjula Anagani",
+      title: "Padma Shri Awardee • Pioneer in Minimally Invasive Gynecology",
+      image: "/uploads/manjula.png",
+      bio: "Dr. Manjula Anagani is an internationally acclaimed gynecologist and laparoscopic surgeon, known for revolutionizing women's healthcare in India. A Padma Shri recipient, she has pioneered several innovative surgical techniques, especially in minimally invasive gynecology, and holds records for performing rare and complex procedures. Beyond clinical excellence, she is a passionate advocate for women's health awareness, author, mentor, and a regular voice at global medical forums."
     }
   ];
 
