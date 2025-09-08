@@ -84,7 +84,12 @@ const Speakers = () => {
                   <img 
                     src={speaker.image} 
                     alt={speaker.name} 
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+                      speaker.id === 2 ? 'object-top' : // Ashok - push down
+                      speaker.id === 5 ? 'object-top' : // Niharika - push down  
+                      speaker.id === 6 ? 'object-top' : // Major - push down
+                      'object-center' // Default for others
+                    }`}
                   />
                 </div>
                 <div className="p-6">
