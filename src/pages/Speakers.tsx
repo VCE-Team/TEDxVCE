@@ -54,6 +54,20 @@ const Speakers = () => {
       title: "Padma Shri Awardee • Pioneer in Minimally Invasive Gynecology",
       image: "/uploads/manjula.png",
       bio: "Dr. Manjula Anagani is an internationally acclaimed gynecologist and laparoscopic surgeon, known for revolutionizing women's healthcare in India. A Padma Shri recipient, she has pioneered several innovative surgical techniques, especially in minimally invasive gynecology, and holds records for performing rare and complex procedures. Beyond clinical excellence, she is a passionate advocate for women's health awareness, author, mentor, and a regular voice at global medical forums."
+    },
+    {
+      id: 8,
+      name: "Jayaprakash Narayana",
+      title: "Activist • Former Public Administrator",
+      image: "/uploads/jaya.png",
+      bio: "Dr. Jayaprakash Narayan, popularly known as JP, is the founder of the Lok Satta movement and a former IAS officer who chose public life to fight for good governance, transparency, and democratic reforms in India. A physician by training, he has dedicated his life to empowering citizens, strengthening institutions, and building a more accountable and people-centric democracy."
+    },
+    {
+      id: 9,
+      name: "Shams Aalam",
+      title: "Indian athlete",
+      image: "/uploads/shams.png",
+      bio: "Mohammad Shams Aalam Shaikh is a world-ranked para-swimmer, disability rights advocate, and motivational speaker. Once a national karate champion, he turned to swimming after becoming paraplegic, breaking records—including a historic 13 km open-water swim in the Ganges. A TEDx speaker and global sports mentor, he champions accessibility and inclusion through sport."
     }
   ];
 
