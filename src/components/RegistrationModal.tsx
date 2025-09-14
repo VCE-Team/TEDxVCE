@@ -115,7 +115,7 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   </div>
                   <div className="bg-tedxred/20 p-3 rounded-lg">
                     <p className="text-tedxred font-semibold text-sm">
-                      ✨ Buy 5, Get 1 Free (Physical Registration Only)
+                      ✨ Buy 5, Get 1 Free
                     </p>
                   </div>
                 </div>
@@ -149,6 +149,9 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   </div>
                   <div className="bg-tedxred/20 p-3 rounded-lg">
                     <p className="text-tedxred font-semibold text-sm">
+                      ✨ Buy 5, Get 1 Free
+                    </p>
+                    <p className="text-tedxred font-semibold text-sm mt-1">
                       🌐 Online Registration Available
                     </p>
                   </div>
