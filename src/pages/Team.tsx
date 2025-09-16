@@ -605,21 +605,19 @@ const Team = () => {
           </motion.div>
 
           <Tabs defaultValue="core" className="mb-12">
-          <div className="flex justify-start sm:justify-center mb-8 w-full">
-                <TabsList className="flex overflow-x-auto whitespace-nowrap scrollbar-hide bg-black/40 backdrop-blur-sm border border-white/10 rounded-lg px-2 py-1 w-full sm:w-auto">
-                  <TabsTrigger value="core" className="data-[state=active]:bg-tedxred px-4 py-2">Core Team</TabsTrigger>
-                  <TabsTrigger value="faculty" className="data-[state=active]:bg-tedxred px-4 py-2">Faculty</TabsTrigger>
-                  <TabsTrigger value="technical" className="data-[state=active]:bg-tedxred px-4 py-2">Technical</TabsTrigger>
-                  <TabsTrigger value="Finance" className="data-[state=active]:bg-tedxred px-4 py-2">Finance</TabsTrigger>
-                  <TabsTrigger value="operations" className="data-[state=active]:bg-tedxred px-4 py-2">Operations</TabsTrigger>
-                  <TabsTrigger value="marketing" className="data-[state=active]:bg-tedxred px-4 py-2">Marketing & PR</TabsTrigger>
-                  <TabsTrigger value="social" className="data-[state=active]:bg-tedxred px-4 py-2">Social Media & Designing</TabsTrigger>
-                  <TabsTrigger value="hospitality" className="data-[state=active]:bg-tedxred px-4 py-2">Hospitality</TabsTrigger>
-                  <TabsTrigger value="anchoring" className="data-[state=active]:bg-tedxred px-4 py-2">Anchoring</TabsTrigger>
-                </TabsList>
-              </div>
-
-
+          <div className="w-full overflow-x-auto scrollbar-hide">
+            <TabsList className="flex whitespace-nowrap bg-black/40 backdrop-blur-sm border border-white/10 rounded-lg px-2 py-1 min-w-max">
+              <TabsTrigger value="core" className="data-[state=active]:bg-tedxred px-4 py-2">Core Team</TabsTrigger>
+              <TabsTrigger value="faculty" className="data-[state=active]:bg-tedxred px-4 py-2">Faculty</TabsTrigger>
+              <TabsTrigger value="technical" className="data-[state=active]:bg-tedxred px-4 py-2">Technical</TabsTrigger>
+              <TabsTrigger value="Finance" className="data-[state=active]:bg-tedxred px-4 py-2">Finance</TabsTrigger>
+              <TabsTrigger value="operations" className="data-[state=active]:bg-tedxred px-4 py-2">Operations</TabsTrigger>
+              <TabsTrigger value="marketing" className="data-[state=active]:bg-tedxred px-4 py-2">Marketing & PR</TabsTrigger>
+              <TabsTrigger value="social" className="data-[state=active]:bg-tedxred px-4 py-2">Social Media & Designing</TabsTrigger>
+              <TabsTrigger value="hospitality" className="data-[state=active]:bg-tedxred px-4 py-2">Hospitality</TabsTrigger>
+              <TabsTrigger value="anchoring" className="data-[state=active]:bg-tedxred px-4 py-2">Anchoring</TabsTrigger>
+            </TabsList>
+          </div>
 
             <TabsContent value="core" className="mt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
