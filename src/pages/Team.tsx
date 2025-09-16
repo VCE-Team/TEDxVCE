@@ -78,17 +78,17 @@ const Team = () => {
       email: "curator@vardhaman.org",
       bio: "Lohith Kumar Teerthala serves as the Curator for TEDxVCE, overseeing speaker selection and content development. He ensures each talk delivers powerful ideas worth spreading and maintains the high standards of TEDx events."
     },
-    {
-      id: 7,
-      name: "TBD",
-      role: "Volunteer Coordinator",
-      department: "operations",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
-      email: "volunteer@vardhaman.org",
-      bio: "Position to be filled. The Volunteer Coordinator will recruit, train, and manage the TEDxVCE volunteer team, ensuring smooth operations on event day."
-    },
+    // {
+    //   id: 7,
+    //   name: "TBD",
+    //   role: "Volunteer Coordinator",
+    //   department: "operations",
+    //   image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "volunteer@vardhaman.org",
+    //   bio: "Position to be filled. The Volunteer Coordinator will recruit, train, and manage the TEDxVCE volunteer team, ensuring smooth operations on event day."
+    // },
     {
       id: 8,
       name: "TBD",
@@ -190,7 +190,382 @@ const Team = () => {
       instagram: "https://www.instagram.com/arondsouza3/",
       email: "executive.producer@vardhaman.org",
       bio: "Aron D'Souza serves as the Executive Producer for TEDxVCE, overseeing the overall production and execution of TEDxVCE, ensuring all elements come together seamlessly."
-    }
+    },
+    {
+      id: 18,
+      name: "Manish Palusam ",
+      role: "Operations Manager ",
+      department: "operations",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 19,
+      name: "Buddavaram Sheshaswi",
+      role: "Associate Manager",
+      department: "operations",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 20,
+      name: "Dhiren Rao",
+      role: "Associate Manager",
+      department: "operations",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 21,
+      name: "Ananya Charaka",
+      role: "Associate Manager",
+      department: "operations",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 22,
+      name: "Franzonia",
+      role: "Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 23,
+      name: "M Tanvi",
+      role: "Associate Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 24,
+      name: "Akshaya Peddapatla",
+      role: "Associate Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 25,
+      name: "G Vaishnavi",
+      role: "Associate Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 26,
+      name: "Satya Subham",
+      role: "Associate Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 27,
+      name: "K Spandana",
+      role: "Associate Manager",
+      department: "Finance",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 28,
+      name: "Karnakoti Nandini",
+      role: "Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 29,
+      name: "G Rishikesh",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 30,
+      name: "Sathvik Reddy",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 31,
+      name: "Pavan Kumar",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 32,
+      name: "Edla Rohan",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 33,
+      name: "P Yasawini",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 34,
+      name: "Himavardhan Reddy Venna ",
+      role: "Website Manager",
+      department: "technical",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 35,
+      name: "Mayur Rathi",
+      role: "Production Manager",
+      department: "technical",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 36,
+      name: "Mohit Chandra",
+      role: "Manager",
+      department: "social",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 37,
+      name: "Omar Ayub",
+      role: "Designer",
+      department: "social",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 38,
+      name: "Herakar Nithish",
+      role: "Associate Manager",
+      department: "social",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 39,
+      name: "Shradha",
+      role: "Content Writer",
+      department: "social",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 40,
+      name: "Kushi Sajjan",
+      role: "Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 41,
+      name: "G Durga Prasad",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 42,
+      name: "P Manasa",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 43,
+      name: "Akshaya",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 44,
+      name: "Bandari Sai Ritheesh",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 45,
+      name: "Farhath",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 46,
+      name: "E Durga Prasad",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 47,
+      name: "Sreya Monala",
+      role: "Manager",
+      department: "anchoring",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 48,
+      name: "Anumita Choubey",
+      role: "Associate Manager",
+      department: "anchoring",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 49,
+      name: "Arjun",
+      role: "Associate Manager",
+      department: "anchoring",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 50,
+      name: "Aishwarya Reddy",
+      role: "Associate Manager",
+      department: "anchoring",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 51,
+      name: "Sidda Sankalp",
+      role: "Associate Manager",
+      department: "anchoring",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    
   ];
 
   const toggleMember = (id: number) => {
@@ -235,10 +610,13 @@ const Team = () => {
               <TabsList className="bg-black/40 backdrop-blur-sm border border-white/10">
                 <TabsTrigger value="core" className="data-[state=active]:bg-tedxred">Core Team</TabsTrigger>
                 <TabsTrigger value="faculty" className="data-[state=active]:bg-tedxred">Faculty</TabsTrigger>
-                <TabsTrigger value="creative" className="data-[state=active]:bg-tedxred">Creative</TabsTrigger>
                 <TabsTrigger value="technical" className="data-[state=active]:bg-tedxred">Technical</TabsTrigger>
-                <TabsTrigger value="marketing" className="data-[state=active]:bg-tedxred">Marketing</TabsTrigger>
+                <TabsTrigger value="Finance" className="data-[state=active]:bg-tedxred">Finance</TabsTrigger>
                 <TabsTrigger value="operations" className="data-[state=active]:bg-tedxred">Operations</TabsTrigger>
+                <TabsTrigger value="marketing" className="data-[state=active]:bg-tedxred">Marketing & PR</TabsTrigger>
+                <TabsTrigger value="social" className="data-[state=active]:bg-tedxred">Social Media & Designing</TabsTrigger>
+                <TabsTrigger value="hospitality" className="data-[state=active]:bg-tedxred">Hospitality</TabsTrigger>
+                <TabsTrigger value="anchoring" className="data-[state=active]:bg-tedxred">Anchoring</TabsTrigger>
               </TabsList>
             </div>
 
@@ -258,7 +636,7 @@ const Team = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="creative" className="mt-0">
+            {/* <TabsContent value="creative" className="mt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {teamMembers
                   .filter(member => member.department === "creative")
@@ -272,7 +650,7 @@ const Team = () => {
                     />
                   ))}
               </div>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="technical" className="mt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -294,6 +672,70 @@ const Team = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {teamMembers
                   .filter(member => member.department === "marketing")
+                  .map((member, index) => (
+                    <TeamMemberCard 
+                      key={member.id}
+                      member={member} 
+                      index={index}
+                      isExpanded={expandedMember === member.id} 
+                      toggleExpanded={() => toggleMember(member.id)} 
+                    />
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="Finance" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {teamMembers
+                  .filter(member => member.department === "Finance")
+                  .map((member, index) => (
+                    <TeamMemberCard 
+                      key={member.id}
+                      member={member} 
+                      index={index}
+                      isExpanded={expandedMember === member.id} 
+                      toggleExpanded={() => toggleMember(member.id)} 
+                    />
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="social" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {teamMembers
+                  .filter(member => member.department === "social")
+                  .map((member, index) => (
+                    <TeamMemberCard 
+                      key={member.id}
+                      member={member} 
+                      index={index}
+                      isExpanded={expandedMember === member.id} 
+                      toggleExpanded={() => toggleMember(member.id)} 
+                    />
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="hospitality" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {teamMembers
+                  .filter(member => member.department === "hospitality")
+                  .map((member, index) => (
+                    <TeamMemberCard 
+                      key={member.id}
+                      member={member} 
+                      index={index}
+                      isExpanded={expandedMember === member.id} 
+                      toggleExpanded={() => toggleMember(member.id)} 
+                    />
+                  ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="anchoring" className="mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {teamMembers
+                  .filter(member => member.department === "anchoring")
                   .map((member, index) => (
                     <TeamMemberCard 
                       key={member.id}

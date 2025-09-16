@@ -10,6 +10,7 @@ interface RegistrationModalProps {
 
 const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
   const [selectedOption, setSelectedOption] = useState<'vardhaman' | 'outside' | null>(null);
+  const [vardhamanOption, setVardhamanOption] = useState<'offline' | 'online' | null>(null);
 
   const facultyCoordinators = [
     { name: "Dr. Indrajeet Sahu", department: "Civil" },
@@ -27,7 +28,7 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
   ];
 
   const handleOutsideClick = () => {
-    window.open('https://www.meraevents.com/event/tedxvce2025', '_blank');
+    window.open("https://www.meraevents.com/event/tedxvce2025", "_blank");
     onClose();
   };
 
@@ -90,11 +91,14 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
               {/* Vardhaman Students */}
               <motion.div
                 className={`p-6 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
-                  selectedOption === 'vardhaman'
-                    ? 'border-tedxred bg-tedxred/10'
-                    : 'border-white/20 bg-black/40 hover:border-white/40'
+                  selectedOption === "vardhaman"
+                    ? "border-tedxred bg-tedxred/10"
+                    : "border-white/20 bg-black/40 hover:border-white/40"
                 }`}
-                onClick={() => setSelectedOption('vardhaman')}
+                onClick={() => {
+                  setSelectedOption("vardhaman");
+                  setVardhamanOption(null);
+                }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -104,10 +108,12 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Vardhaman Students</h3>
-                    <p className="text-white/70 text-sm">Register through Faculty Coordinators</p>
+                    <p className="text-white/70 text-sm">
+                      Register Online or Offline
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <span className="text-tedxred font-bold">₹600</span>
@@ -115,7 +121,7 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   </div>
                   <div className="bg-tedxred/20 p-3 rounded-lg">
                     <p className="text-tedxred font-semibold text-sm">
-                      ✨ Buy 5, Get 1 Free
+                      ✨ Buy 5, Get 1 Free (Physical Registration Only)
                     </p>
                   </div>
                 </div>
@@ -124,11 +130,11 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
               {/* Outside Participants */}
               <motion.div
                 className={`p-6 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
-                  selectedOption === 'outside'
-                    ? 'border-tedxred bg-tedxred/10'
-                    : 'border-white/20 bg-black/40 hover:border-white/40'
+                  selectedOption === "outside"
+                    ? "border-tedxred bg-tedxred/10"
+                    : "border-white/20 bg-black/40 hover:border-white/40"
                 }`}
-                onClick={() => setSelectedOption('outside')}
+                onClick={() => setSelectedOption("outside")}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -138,10 +144,12 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Outside Participants</h3>
-                    <p className="text-white/70 text-sm">Register online via MeraEvents</p>
+                    <p className="text-white/70 text-sm">
+                      Register online via MeraEvents
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <span className="text-tedxred font-bold">₹600</span>
@@ -159,8 +167,8 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
               </motion.div>
             </div>
 
-            {/* Faculty Coordinators Section */}
-            {selectedOption === 'vardhaman' && (
+            {/* Vardhaman Nested Options */}
+            {selectedOption === "vardhaman" && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -168,37 +176,87 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
               >
                 <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                   <Users className="text-tedxred" size={20} />
-                  Faculty Coordinators
+                  Vardhaman Registration
                 </h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {facultyCoordinators.map((coordinator, index) => (
-                    <div
-                      key={index}
-                      className="bg-black/40 border border-white/10 rounded-lg p-4"
-                    >
-                      <p className="font-semibold text-white">{coordinator.name}</p>
-                      <p className="text-tedxred text-sm">{coordinator.department}</p>
-                    </div>
-                  ))}
+
+                {/* Choose Online / Offline */}
+                <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                  <div
+                    className={`p-4 rounded-lg border cursor-pointer transition ${
+                      vardhamanOption === "offline"
+                        ? "border-tedxred bg-tedxred/10"
+                        : "border-white/20 hover:border-white/40"
+                    }`}
+                    onClick={() => setVardhamanOption("offline")}
+                  >
+                    <h4 className="font-semibold text-white">Offline</h4>
+                    <p className="text-sm text-white/70">
+                      Through Faculty Coordinators
+                    </p>
+                  </div>
+
+                  <div
+                    className={`p-4 rounded-lg border cursor-pointer transition ${
+                      vardhamanOption === "online"
+                        ? "border-tedxred bg-tedxred/10"
+                        : "border-white/20 hover:border-white/40"
+                    }`}
+                    onClick={() => setVardhamanOption("online")}
+                  >
+                    <h4 className="font-semibold text-white">Online</h4>
+                    <p className="text-sm text-white/70">
+                      Register via portal
+                    </p>
+                  </div>
                 </div>
-                <p className="text-white/70 text-sm mt-4 text-center">
-                  ✨ For registrations, reach out to your respective coordinator!
-                </p>
+
+                {/* Show coordinators if offline */}
+                {vardhamanOption === "offline" && (
+                  <>
+                    <h4 className="text-lg font-bold mb-2">
+                      Faculty Coordinators
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {facultyCoordinators.map((coordinator, index) => (
+                        <div
+                          key={index}
+                          className="bg-black/40 border border-white/10 rounded-lg p-4"
+                        >
+                          <p className="font-semibold text-white">
+                            {coordinator.name}
+                          </p>
+                          <p className="text-tedxred text-sm">
+                            {coordinator.department}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-white/70 text-sm mt-4 text-center">
+                      ✨ For registrations, reach out to your respective
+                      coordinator!
+                    </p>
+                  </>
+                )}
+
+                {/* Online option */}
+                {vardhamanOption === "online" && (
+                  <div className="text-center mt-4">
+                    <Button
+                      onClick={() =>
+                        window.open("https://www.meraevents.com/event/tedxvce2025", "_blank")
+                      }
+                      className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
+                    >
+                      Register Online
+                    </Button>
+                  </div>
+                )}
               </motion.div>
             )}
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {selectedOption === 'vardhaman' && (
-                <Button
-                  onClick={onClose}
-                  className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
-                >
-                  Contact Your Coordinator
-                </Button>
-              )}
-              
-              {selectedOption === 'outside' && (
+              {selectedOption === "outside" && (
                 <Button
                   onClick={handleOutsideClick}
                   className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3 flex items-center gap-2"
@@ -207,7 +265,16 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
                   <ExternalLink size={16} />
                 </Button>
               )}
-              
+
+              {selectedOption === "vardhaman" && vardhamanOption === "offline" && (
+                <Button
+                  onClick={onClose}
+                  className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
+                >
+                  Contact Your Coordinator
+                </Button>
+              )}
+
               <Button
                 onClick={onClose}
                 variant="outline"
@@ -224,5 +291,3 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
 };
 
 export default RegistrationModal;
-
-
