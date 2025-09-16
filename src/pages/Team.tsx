@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -34,39 +33,39 @@ const Team = () => {
       email: "sudeepbanerjee@ieee.org",
       bio: "Sudeep leads the TEDxVCE organizing team with 5+ years of experience in event management. His passion for spreading ideas drives the vision for our annual conference."
     },
-    {
-      id: 3,
-      name: "TBD",
-      role: "Technical Lead",
-      department: "technical",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
-      email: "technical@vardhaman.org",
-      bio: "Position to be filled. The Technical Lead will ensure flawless technical execution of the TEDxVCE event, from sound quality to lighting and presentation support."
-    },
-    {
-      id: 4,
-      name: "TBD",
-      role: "Marketing Head",
-      department: "marketing",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
-      email: "marketing@vardhaman.org",
-      bio: "Position to be filled. The Marketing Head will lead brand strategy and promotional campaigns for TEDxVCE, leveraging digital marketing and community outreach."
-    },
-    {
-      id: 5,
-      name: "TBD",
-      role: "Design Lead",
-      department: "creative",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
-      email: "design@vardhaman.org",
-      bio: "Position to be filled. The Design Lead will oversee the visual identity of TEDxVCE, from event branding to stage design, creating immersive experiences."
-    },
+    // {
+    //   id: 3,
+    //   name: "TBD",
+    //   role: "Technical Lead",
+    //   department: "technical",
+    //   image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "technical@vardhaman.org",
+    //   bio: "Position to be filled. The Technical Lead will ensure flawless technical execution of the TEDxVCE event, from sound quality to lighting and presentation support."
+    // },
+    // {
+    //   id: 4,
+    //   name: "TBD",
+    //   role: "Marketing Head",
+    //   department: "marketing",
+    //   image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "marketing@vardhaman.org",
+    //   bio: "Position to be filled. The Marketing Head will lead brand strategy and promotional campaigns for TEDxVCE, leveraging digital marketing and community outreach."
+    // },
+    // {
+    //   id: 5,
+    //   name: "TBD",
+    //   role: "Design Lead",
+    //   department: "creative",
+    //   image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "design@vardhaman.org",
+    //   bio: "Position to be filled. The Design Lead will oversee the visual identity of TEDxVCE, from event branding to stage design, creating immersive experiences."
+    // },
     {
       id: 6,
       name: "Lohith Kumar Teerthala",
@@ -89,17 +88,17 @@ const Team = () => {
     //   email: "volunteer@vardhaman.org",
     //   bio: "Position to be filled. The Volunteer Coordinator will recruit, train, and manage the TEDxVCE volunteer team, ensuring smooth operations on event day."
     // },
-    {
-      id: 8,
-      name: "TBD",
-      role: "Sponsorship Coordinator",
-      department: "marketing",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
-      linkedin: "#",
-      instagram: "#",
-      email: "sponsorship@vardhaman.org",
-      bio: "Position to be filled. The Sponsorship Coordinator will build partnerships with sponsors and supporters, securing resources for an exceptional TEDxVCE experience."
-    },
+    // {
+    //   id: 8,
+    //   name: "TBD",
+    //   role: "Sponsorship Coordinator",
+    //   department: "marketing",
+    //   image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+    //   linkedin: "#",
+    //   instagram: "#",
+    //   email: "sponsorship@vardhaman.org",
+    //   bio: "Position to be filled. The Sponsorship Coordinator will build partnerships with sponsors and supporters, securing resources for an exceptional TEDxVCE experience."
+    // },
     {
       id: 9,
       name: "Dr. JVR Ravindra",
