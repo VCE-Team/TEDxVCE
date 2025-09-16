@@ -564,6 +564,50 @@ const Team = () => {
       email: "#",
       bio: ""
     },
+    {
+      id: 52,
+      name: "Ajith Singh",
+      role: "Associate Manager",
+      department: "operations",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 53,
+      name: "Doodala Sudeep Goud",
+      role: "Associate Manager",
+      department: "marketing",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 54,
+      name: "Gudibanda Sai Ganesh Reddy",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
+    {
+      id: 55,
+      name: "M Shruthi",
+      role: "Associate Manager",
+      department: "hospitality",
+      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      linkedin: "#",
+      instagram: "#",
+      email: "#",
+      bio: ""
+    },
     
   ];
 
