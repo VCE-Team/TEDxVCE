@@ -71,7 +71,7 @@ const Team = () => {
       name: "Lohith Kumar Teerthala",
       role: "Curator",
       department: "core",
-      image: "/uploads/d0b3c019-2de4-4637-88e6-07b01eff5881.png",
+      image: "/uploads/3.png",
       linkedin: "https://www.linkedin.com/in/lohith-kumar-teerthala-9b04aa197/",
       instagram: "https://www.instagram.com/_nani_lohith_19_/",
       email: "curator@vardhaman.org",
