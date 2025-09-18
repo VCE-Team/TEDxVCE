@@ -57,7 +57,7 @@ const Speakers = () => {
     },
     {
       id: 8,
-      name: "Jayaprakash Narayana",
+      name: "Jayaprakash Narayan",
       title: "Activist • Former Public Administrator",
       image: "/uploads/jaya.png",
       bio: "Dr. Jayaprakash Narayan, popularly known as JP, is the founder of the Lok Satta movement and a former IAS officer who chose public life to fight for good governance, transparency, and democratic reforms in India. A physician by training, he has dedicated his life to empowering citizens, strengthening institutions, and building a more accountable and people-centric democracy."
