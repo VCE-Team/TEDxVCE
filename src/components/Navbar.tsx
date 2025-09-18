@@ -96,7 +96,7 @@ const Navbar = () => {
                 Registrations Closed
               </Button>
               <p className="text-white/70 text-xs mt-2">
-                Thank you for the support and lot of registrations!
+                Registrations are now closed. Thank you to everyone who has registered! We look forward to your participation
               </p>
             </div>
           </motion.div>
