@@ -53,7 +53,7 @@ const EventDetails = () => {
             Registrations Closed
           </Button>
           <p className="text-white/70 text-sm mt-3">
-            Thank you for the support and lot of registrations!
+            Registrations are now closed. Thank you to everyone who has registered! We look forward to your participation
           </p>
         </div>
       </div>

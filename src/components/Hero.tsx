@@ -330,7 +330,7 @@ const Hero = () => {
             </Button>
           </div>
           <p className="text-white/70 text-sm text-center">
-            Thank you for the support and lot of registrations!
+            Registrations are now closed. Thank you to everyone who has registered! We look forward to your participation
           </p>
         </motion.div>
         
