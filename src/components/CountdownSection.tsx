@@ -130,11 +130,14 @@ const CountdownSection = () => {
           viewport={{ once: true }}
         >
           <Button 
-            className="bg-tedxred hover:bg-tedxred/90 text-white text-lg px-8 py-6 transition-all hover:scale-105"
-            onClick={() => window.open('https://www.meraevents.com/event/tedxvce2025', '_blank')}
+            className="bg-gray-500 text-white text-lg px-8 py-6 cursor-not-allowed opacity-75"
+            disabled
           >
-            Get Tickets
+            Registrations Closed
           </Button>
+          <p className="text-white/70 text-sm mt-3">
+            Thank you for the support and lot of registrations!
+          </p>
         </motion.div>
       </div>
     </section>

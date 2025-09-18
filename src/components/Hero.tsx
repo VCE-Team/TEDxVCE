@@ -307,26 +307,31 @@ const Hero = () => {
         </motion.p>
         
         <motion.div 
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-col items-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 5.5 }}
         >
-          <Button 
-            className="bg-gray-500 text-white text-lg px-8 py-6 cursor-not-allowed opacity-75"
-            disabled
-          >
-            Registrations Closed
-          </Button>
-          <Button 
-            variant="outline" 
-            className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 hover:scale-105 transition-all"
-            onClick={() => {
-              window.location.href = '/about#theme';
-            }}
-          >
-            Learn More
-          </Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button 
+              className="bg-gray-500 text-white text-lg px-8 py-6 cursor-not-allowed opacity-75"
+              disabled
+            >
+              Registrations Closed
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 hover:scale-105 transition-all"
+              onClick={() => {
+                window.location.href = '/about#theme';
+              }}
+            >
+              Learn More
+            </Button>
+          </div>
+          <p className="text-white/70 text-sm text-center">
+            Thank you for the support and lot of registrations!
+          </p>
         </motion.div>
         
         <motion.div 

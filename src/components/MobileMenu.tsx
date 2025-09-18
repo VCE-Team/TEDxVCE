@@ -134,7 +134,7 @@ const MobileMenu = ({ isOpen, onClose, onOpenRegistration }: MobileMenuProps) =>
       </nav>
 
       <motion.div 
-        className="p-8 flex justify-center"
+        className="p-8 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
@@ -145,6 +145,9 @@ const MobileMenu = ({ isOpen, onClose, onOpenRegistration }: MobileMenuProps) =>
         >
           Registrations Closed
         </Button>
+        <p className="text-white/70 text-xs mt-2 text-center">
+          Thank you for the support and lot of registrations!
+        </p>
       </motion.div>
     </motion.div>
   );

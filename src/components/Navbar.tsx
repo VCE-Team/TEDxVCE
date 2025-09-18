@@ -88,12 +88,17 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            <Button 
-              className="bg-gray-500 text-white cursor-not-allowed opacity-75"
-              disabled
-            >
-              Registrations Closed
-            </Button>
+            <div className="text-center">
+              <Button 
+                className="bg-gray-500 text-white cursor-not-allowed opacity-75"
+                disabled
+              >
+                Registrations Closed
+              </Button>
+              <p className="text-white/70 text-xs mt-2">
+                Thank you for the support and lot of registrations!
+              </p>
+            </div>
           </motion.div>
 
           {/* Mobile menu button */}
