@@ -192,7 +192,7 @@ const Team = () => {
     },
     {
       id: 18,
-      name: "Manish Palusam ",
+      name: "Sai Manish Palusam",
       role: "Operations Manager ",
       department: "operations",
       image: "/uploads/5.png",
@@ -511,7 +511,7 @@ const Team = () => {
     },
     {
       id: 47,
-      name: "Sreya Monala",
+      name: "Shreya Monala",
       role: "Manager",
       department: "anchoring",
       image: "/uploads/34.png",
