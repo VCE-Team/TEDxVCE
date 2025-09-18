@@ -68,6 +68,20 @@ const Speakers = () => {
       title: "Indian athlete",
       image: "/uploads/shams.png",
       bio: "Mohammad Shams Aalam Shaikh is a world-ranked para-swimmer, disability rights advocate, and motivational speaker. Once a national karate champion, he turned to swimming after becoming paraplegic, breaking records—including a historic 13 km open-water swim in the Ganges. A TEDx speaker and global sports mentor, he champions accessibility and inclusion through sport."
+    },
+    {
+      id: 10,
+      name: "Tharun Theja S",
+      title: "Trainer & Facilitator, Associate Director, AI Services- LTIMindtree",
+      image: "/uploads/tharun.png",
+      bio: "Tharun Theja S is a Sr. Project Manager with over 8 years of experience in IT Process Automation, Service Delivery, and Managed Services across on-premise and cloud environments. A SAFe Scrum Master, Harvard Business School–certified in Team Management, and Automation Anywhere Master Certified professional, he has deep expertise in Robotic Process Automation, IT operations, servers, backups, and storage administration. Recognized as a productivity enhancement expert and trainer, Tharun is passionate about driving digital transformation, optimizing processes, and enabling teams to achieve operational excellence."
+    },
+    {
+      id: 11,
+      name: "Dr. Samatha Tulla",
+      title: "Longevity Physician • Medical Director & Co-founder at PMX Health",
+      image: "/uploads/samatha.png",
+      bio: "Dr. Samatha Tulla, M.D, is a Longevity focused Internal Medicine Physician. As a Medical Director and Co-founder at PMX Health, she brings to practice 5P medicine and pioneers next-generation healthcare by combining unique genetic makeup, precision diagnostics and lifestyle markers, to create personalized strategies for disease prevention and improving healthspan."
     }
   ];
 
