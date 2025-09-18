@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Users, ExternalLink, GraduationCap, Building2 } from "lucide-react";
+import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface RegistrationModalProps {
@@ -9,28 +8,6 @@ interface RegistrationModalProps {
 }
 
 const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
-  const [selectedOption, setSelectedOption] = useState<'vardhaman' | 'outside' | null>(null);
-  const [vardhamanOption, setVardhamanOption] = useState<'offline' | 'online' | null>(null);
-
-  const facultyCoordinators = [
-    { name: "Dr. Indrajeet Sahu", department: "Civil" },
-    { name: "Dr. Praveen Kumar B", department: "EEE" },
-    { name: "Dr. S Navya Sree", department: "Mech" },
-    { name: "Mr. R Phani Vidyadhar", department: "ECE" },
-    { name: "Mr. Mohan V", department: "CSE" },
-    { name: "Mr. BJV Varma", department: "CSE" },
-    { name: "Dr. Bhasker Reddy K", department: "IT" },
-    { name: "Mr. A Sai Madhav Raj", department: "CSM" },
-    { name: "Mr. M Ashwan Kumar", department: "CSD" },
-    { name: "Dr. J Naga Padmaja", department: "AIML & AIDS" },
-    { name: "Dr. G Padma", department: "Maths" },
-    { name: "Dr. Shree Charan C", department: "MBA" }
-  ];
-
-  const handleOutsideClick = () => {
-    window.open("https://www.meraevents.com/event/tedxvce2025", "_blank");
-    onClose();
-  };
 
   return (
     <AnimatePresence>
@@ -69,213 +46,26 @@ const RegistrationModal = ({ isOpen, onClose }: RegistrationModalProps) => {
             {/* Header */}
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                🎤 TEDx <span className="text-tedxred">Registrations</span> Open!
+                🎤 TEDx <span className="text-tedxred">Registrations</span> Closed
               </h2>
-              <div className="flex items-center justify-center gap-4 text-tedxred mb-4">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">🍱</span>
-                  <span className="text-sm">Lunch Included</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">🎁</span>
-                  <span className="text-sm">Goodie Bag</span>
-                </div>
+              <div className="bg-tedxred/20 border border-tedxred/30 rounded-xl p-6 mb-6">
+                <p className="text-white text-lg mb-4">
+                  Thank you for your valuable support! 
+                </p>
+                <p className="text-tedxred font-bold text-xl">
+                  See you on TEDxVCE - 20th September
+                </p>
               </div>
               <p className="text-white/80">
-                Choose your registration option below
+                We're excited to see you at the event!
               </p>
             </div>
 
-            {/* Registration Options */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              {/* Vardhaman Students */}
-              <motion.div
-                className={`p-6 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
-                  selectedOption === "vardhaman"
-                    ? "border-tedxred bg-tedxred/10"
-                    : "border-white/20 bg-black/40 hover:border-white/40"
-                }`}
-                onClick={() => {
-                  setSelectedOption("vardhaman");
-                  setVardhamanOption(null);
-                }}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-tedxred/20 rounded-lg">
-                    <GraduationCap className="text-tedxred" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Vardhaman Students</h3>
-                    <p className="text-white/70 text-sm">
-                      Register Online or Offline
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-tedxred font-bold">₹600</span>
-                    <span className="text-white/70">per ticket</span>
-                  </div>
-                  <div className="bg-tedxred/20 p-3 rounded-lg">
-                    <p className="text-tedxred font-semibold text-sm">
-                      ✨ Buy 5, Get 1 Free 
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Outside Participants */}
-              <motion.div
-                className={`p-6 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
-                  selectedOption === "outside"
-                    ? "border-tedxred bg-tedxred/10"
-                    : "border-white/20 bg-black/40 hover:border-white/40"
-                }`}
-                onClick={() => setSelectedOption("outside")}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-tedxred/20 rounded-lg">
-                    <Building2 className="text-tedxred" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Outside Participants</h3>
-                    <p className="text-white/70 text-sm">
-                      Register online via MeraEvents
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-tedxred font-bold">₹600</span>
-                    <span className="text-white/70">per ticket</span>
-                  </div>
-                  <div className="bg-tedxred/20 p-3 rounded-lg">
-                    <p className="text-tedxred font-semibold text-sm">
-                      🌐 Online Registration Available
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Vardhaman Nested Options */}
-            {selectedOption === "vardhaman" && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="mb-8"
-              >
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Users className="text-tedxred" size={20} />
-                  Vardhaman Registration
-                </h3>
-
-                {/* Choose Online / Offline */}
-                <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                  <div
-                    className={`p-4 rounded-lg border cursor-pointer transition ${
-                      vardhamanOption === "offline"
-                        ? "border-tedxred bg-tedxred/10"
-                        : "border-white/20 hover:border-white/40"
-                    }`}
-                    onClick={() => setVardhamanOption("offline")}
-                  >
-                    <h4 className="font-semibold text-white">Offline</h4>
-                    <p className="text-sm text-white/70">
-                      Through Faculty Coordinators
-                    </p>
-                  </div>
-
-                  <div
-                    className={`p-4 rounded-lg border cursor-pointer transition ${
-                      vardhamanOption === "online"
-                        ? "border-tedxred bg-tedxred/10"
-                        : "border-white/20 hover:border-white/40"
-                    }`}
-                    onClick={() => setVardhamanOption("online")}
-                  >
-                    <h4 className="font-semibold text-white">Online</h4>
-                    <p className="text-sm text-white/70">
-                      Register via portal
-                    </p>
-                  </div>
-                </div>
-
-                {/* Show coordinators if offline */}
-                {vardhamanOption === "offline" && (
-                  <>
-                    <h4 className="text-lg font-bold mb-2">
-                      Faculty Coordinators
-                    </h4>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {facultyCoordinators.map((coordinator, index) => (
-                        <div
-                          key={index}
-                          className="bg-black/40 border border-white/10 rounded-lg p-4"
-                        >
-                          <p className="font-semibold text-white">
-                            {coordinator.name}
-                          </p>
-                          <p className="text-tedxred text-sm">
-                            {coordinator.department}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-white/70 text-sm mt-4 text-center">
-                      ✨ For registrations, reach out to your respective
-                      coordinator!
-                    </p>
-                  </>
-                )}
-
-                {/* Online option */}
-                {vardhamanOption === "online" && (
-                  <div className="text-center mt-4">
-                    <Button
-                      onClick={() =>
-                        window.open("https://www.meraevents.com/event/tedxvce2025", "_blank")
-                      }
-                      className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
-                    >
-                      Register Online
-                    </Button>
-                  </div>
-                )}
-              </motion.div>
-            )}
-
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {selectedOption === "outside" && (
-                <Button
-                  onClick={handleOutsideClick}
-                  className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3 flex items-center gap-2"
-                >
-                  Register on MeraEvents
-                  <ExternalLink size={16} />
-                </Button>
-              )}
-
-              {selectedOption === "vardhaman" && vardhamanOption === "offline" && (
-                <Button
-                  onClick={onClose}
-                  className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
-                >
-                  Contact Your Coordinator
-                </Button>
-              )}
-
+            {/* Close Button */}
+            <div className="flex justify-center">
               <Button
                 onClick={onClose}
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 px-8 py-3"
+                className="bg-tedxred hover:bg-tedxred/90 text-white px-8 py-3"
               >
                 Close
               </Button>

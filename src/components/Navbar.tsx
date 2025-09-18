@@ -89,10 +89,10 @@ const Navbar = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
           >
             <Button 
-              className="bg-tedxred hover:bg-tedxred/90 text-white transition-transform hover:scale-105"
-              onClick={() => setRegistrationModalOpen(true)}
+              className="bg-gray-500 text-white cursor-not-allowed opacity-75"
+              disabled
             >
-              Buy Ticket
+              Registrations Closed
             </Button>
           </motion.div>
 

@@ -140,13 +140,10 @@ const MobileMenu = ({ isOpen, onClose, onOpenRegistration }: MobileMenuProps) =>
         transition={{ delay: 0.5 }}
       >
         <Button 
-          className="bg-tedxred hover:bg-tedxred/90 text-white w-full transition-transform hover:scale-105"
-          onClick={() => {
-            onOpenRegistration();
-            onClose();
-          }}
+          className="bg-gray-500 text-white w-full cursor-not-allowed opacity-75"
+          disabled
         >
-          Buy Ticket
+          Registrations Closed
         </Button>
       </motion.div>
     </motion.div>
