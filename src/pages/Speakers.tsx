@@ -129,19 +129,6 @@ const Speakers = () => {
             ))}
           </div>
 
-          {/* More Speakers Coming Soon */}
-          <div className="text-center py-12">
-            <div className="bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl p-8 max-w-2xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-tedxred">More Speakers Coming Soon</h2>
-              <p className="text-white/80 mb-6">
-                We're carefully curating an amazing lineup of speakers for TEDxVCE 2025.
-              </p>
-              <p className="text-white/70">
-                Stay tuned as we announce more inspiring speakers who will share their ideas worth spreading 
-                under the theme of "Synergy Surge".
-              </p>
-            </div>
-          </div>
 
           <div className="mt-16 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Want to speak at TEDxVCE?</h2>
