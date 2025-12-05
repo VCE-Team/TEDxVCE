@@ -16,7 +16,7 @@ const Team = () => {
       name: "Aniketh Kanna",
       role: "Organizer",
       department: "core",
-      image: "/uploads/aniketh.png",
+      image: "/uploads/aniketh.jpg",
       linkedin: "https://www.linkedin.com/in/aniketh-kanna-003677299/",
       instagram: "https://www.instagram.com/aniketh.06/",
       email: "anikethdegala@gmail.com",
